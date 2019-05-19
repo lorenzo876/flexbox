@@ -1,0 +1,45 @@
+body {
+    color: #555;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  header{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: red;
+  }
+  footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: greenyellow;
+  }
+ section{
+    background-color: darkorchid;
+    color: #eee;
+    padding: 3em 1.5em;
+    flex: 2 1 500px;
+}
+  aside {
+    background-color: #594255;
+    color: #eee;
+    padding: 3em 1.5em;
+    flex: 1 2 250px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container {
+    flex-direction: column;
+    }
+    section {
+    margin-right: 0;
+    flex-basis: auto;
+    }
+  }
